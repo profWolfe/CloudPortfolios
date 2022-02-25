@@ -1,45 +1,126 @@
-name: Azure Static Web Apps CI/CD
+<!DOCTYPE html>
+<html>
+<head>
+<title>WolfeJamesPortfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-content" style="max-width:1300px">
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches:
-      - main
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>James Wolfe</h1>
+      <h1>Portfolio</h1>
+    </div>
+    <div class="w3-padding-64">
+      <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">My Work</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Education</a>
+      <a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contact</a>
+    </div>
+  </div>
+  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-center">
+      <h1>About Me</h1>
+      <img src="/w3images/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
+      <div class="w3-left-align w3-padding-large">
+        <p>Motivated computer scientist with a love for learning. strong organizations skills and demonstrated experience in computer software and hardware, cloud applications, and customer service. Developed professional skills in fast paced working environments and a dedicated education.</p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-jobs:
-  build_and_deploy_job:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-    runs-on: ubuntu-latest
-    name: Build and Deploy Job
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
-      - name: Build And Deploy
-        id: builddeploy
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_FLOWER_0403B8F0F }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
-          action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/" # App source code path
-          api_location: "api" # Api source code path - optional
-          output_location: "build" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
+<!-- Second Grid: Work & Resume -->
+<div class="w3-row">
+  <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
+    <div class="w3-padding-64">
+      <h1>Technical Works</h1>
+    </div>
+    <div class="w3-row">
+        <a href="http://awsportfolio.s3-website-us-east-1.amazonaws.com/";><h3>AWS Cloud Portfolio</h3></a>
+        <p>Launched Portfolio utilizing AWS Cloud services.</p>
+        <a href="http://wolfejamesportfolio.surge.sh/"><h3>Surge Portfolio</h3></a>
+        <p>Published Portfolio utilizing a static website punlishing service called surge.</p>
+        <a href="https://wolfejamesj96.wixsite.com/my-site"><h3>Wix Portfolio</h3></a>
+        <p>Created Portfolio using Wix, a website template service.</p>
+    </div>
+    <br>
+  </div>
 
-  close_pull_request_job:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
-    runs-on: ubuntu-latest
-    name: Close Pull Request Job
-    steps:
-      - name: Close Pull Request
-        id: closepullrequest
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_FLOWER_0403B8F0F }}
-          action: "close"
+
+  <div class="w3-half w3-indigo w3-container" style="min-height:800px">
+    <div class="w3-padding-64 w3-center">
+      <h2>Certifications</h2>
+      <div class="w3-container w3-responsive">
+        <table class="w3-table">
+          <tr>
+            <th>Year</th>
+            <th>Title</th>
+            <th>Where</th>
+          </tr>
+          <tr class="w3-white">
+            <td>2020-2023</td>
+            <td>AWS Cloud Practioner</td>
+            <td>Amazon Web Services</td>
+          </tr>
+          <tr>
+            <td>2015-Present</td>
+            <td>CTECS National Readiness Skills</td>
+            <td>OPHS</td>
+          </tr>
+          <tr class="w3-white">
+            <td>2015-2017</td>
+            <td>UC Davis Veterinary Program at the University of California</td>
+            <td>PetValu</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid: Swing By & Contact -->
+<div class="w3-row" id="contact">
+  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>Education</h1>
+    </div>
+    <div class="w3-padding-64">
+      <h2>Northern Virginia Community College</h2>
+      <h3>A.S. Computer Science</h3>
+      <p>Developed key skills while working individually and grouped solving projects in a classroom setting.</p>
+    </div>
+  </div>
+
+  <div class="w3-half w3-teal w3-container" style="height:700px" >
+    <div class="w3-padding-64 w3-padding-large">
+      <center><h1>Contact</h1>
+      <p class="w3-opacity">GET IN TOUCH</p>
+        <h3>Phone:
+          (703)789-0919
+        </h3>
+        <h3>Email:
+          Wolfe.James.J96@gmail.com
+        </h3>
+        <h3>Github:
+          https://github.com/profWolfe
+        </h3>
+        <h3>LinkedIn:
+          https://www.linkedin.com/in/james-wolfe-6420151aa/
+        </h3>
+      </center>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
