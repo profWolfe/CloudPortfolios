@@ -233,7 +233,7 @@ h4.title {
    Details (home) page
    ========================================================================== */
 .card-inner.page-details { display: block; }
-.photo { float: left }
+.photo { float: left; }
 .photo img {
 	display: block;
 	border-radius: 3px;
