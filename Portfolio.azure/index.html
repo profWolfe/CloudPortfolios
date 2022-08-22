@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Portfolio Azure | James Wolfe</title>
+<title>Azure | James Wolfe</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -14,36 +14,41 @@ hr
   height: 1px;
   width:100%;
 }
+
+.header{
+  position:fixed;
+  background-color: white;
+  top: 0;
+  width: 100%
+}
   </style>
 </head>
 <body class="w3-content" style="max-width:1300px">
-
+<div class="header">
+  <a href="#home" class="w3-button w3-hover-dark-grey">Home</a>
+  <a href="#skills" class="w3-button w3-hover-dark-grey">Skills</a>
+  <a href="#certs" class="w3-button w3-hover-dark-grey">Certifications</a>
+  <a href="#education" class="w3-button w3-hover-dark-grey">Education</a>
+  <a href="#contact" class="w3-button w3-hover-dark-grey" style="color:grey";>Contact Me</a>
+</div>
 <!-- First Grid: Logo & About -->
 <div class="w3-row">
-  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+  <div class="w3-half w3-black w3-container w3-center" style="height:700px" id="home">
     <div class="w3-padding-64">
-      <h1>James Wolfe</h1>
-      <h1>Portfolio</h1>
+      <h1 style="font-variant: small-caps;">James Wolfe</h1>
     </div>
-    <div class="w3-padding-64">
-      <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
-      <a href="jameswolfeblog.com" target="_blank" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Blog</a>
-      <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">My Work</a>
-      <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Education</a>
-      <a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contact</a>
+    <img src="avatar3.png" alt="Person" style="width:175px">
+    <div class="w3-padding-32">
     </div>
   </div>
   <div class="w3-half w3-blue-grey w3-container" style="height:700px">
     <div class="w3-padding-64 w3-center">
-      <h1>About Me</h1>
-      <img src="avatar3.png" alt="Person" style="width:125px">
+      <h1 style="font-variant: small-caps;">Summary</h1><hr>
       <div class="w3-center-align w3-padding-large">
-        <p>Hello, welcome to my custom website portfolio. I'd like to introduce myself, my name is James Wolfe. I'm a computer science graduate with 7+ years of
-          computer software and hardware experience and years of key experience in non-professional and professional settings. My technical background has developed
-          greatly while producing projects such as hardware troubleshooting, data-structures, cloud services, and back-end and front-end website development.
-          Key skills that I've developed, discipline for learning, strong organizational skills, and team-work oriented work ethic. If you find I am compatible with
-          your workplace and team I would love to chat about potential postion opportunities.</p>
-        <p></p>
+        <p><li>After I created and launched a website using AWS I started a new project in Azure, with new services like the data storage container, metrics service, and subscription plan allowing me to develop new technical skills.</p>
+        <p><li>Stored respective index.html file in the data storage container and used the storage account as a publishing service for a static website.</p>
+        <p><li>The metrics services allowed me to monitor capacity and transaction use, the cost analystics service showed the cost of the storage account, this feedback helped give insight on the website.</p>
+        <p><li>All respective files are updated and maintained in GitHub through Git.</p>
       </div>
     </div>
   </div>
@@ -51,32 +56,25 @@ hr
 
 <!-- Second Grid: Work & Resume -->
 <div class="w3-row">
-  <div class="w3-half w3-light-grey w3-container w3-center" style="min-height:800px" id="work">
+  <div class="w3-half w3-light-grey w3-container w3-center" style="min-height:800px" id="skills">
     <div class="w3-padding-48">
-      <h1>Technical Works</h1>
-      <div><hr></div>
+      <h1 style="font-variant: small-caps;">Skills</h1><hr>
+      <h3>Data Storage Container</h3>
+      <h3>Azure Resources</h3>
+      <h3>Metric Service</h3>
+      <h3>Cost Analysis Service</h3>
+      <h3>HTML, CSS, and Java-Script</h3>
+      <h3>GitHub</h3>
+      <h3>Atom</h3>
     </div>
     <div class="w3-row">
-        <h3>Azure Static Website Portfolio</h3>
-<h4>Notable steps done utilizing Agile methodology:</h4>
-<p>1.What use does this provide?</p>
-Using Azure as a platform to publish and host a free static website portfolio by utilizing key services like storage and subscriptions.
-<p>2. How can it be done?</p>
-By customizing a template HTML website the files will be hosted and published utilizing Azure's key services.
-<p>3. Who will visit, is the site good or bad?</p>
-Azure provides anaylitical data such as the amount of visitors to the site.
-<p>4. How will I update the site?</p>
-Pushing the HTML, css, and java-script files to Github repositories and Azure's storage service.
-<p>5. Will it be easy to monitor?</p>
-All key files will be located via Github and Azure's storage service, making is easy to keep track of and monitor.
     </div>
-    <br>
   </div>
 
 
-  <div class="w3-half w3-indigo w3-container" style="min-height:800px">
+  <div class="w3-half w3-indigo w3-container" style="min-height:800px" id="certs">
     <div class="w3-padding-48"><div class="w3-padding-48; w3-center">
-      <h1>Certifications</h1></div>
+      <h1 style="font-variant: small-caps;">Certifications</h1></div>
       <hr>
       <div class="w3-padding-48">
       <div class="w3-container w3-responsive">
@@ -87,24 +85,19 @@ All key files will be located via Github and Azure's storage service, making is 
             <th>Where</th>
           </tr>
           <tr>
+            <td>2020-2023</td>
+            <td>AWS Cloud Practitioner</td>
+            <td>AWS</td>
+          </tr>
+          <tr class="w3-white">
             <td>2022</td>
             <td>Linux Administration Bootcamp</td>
             <td>Udemy</td>
           </tr>
-          <tr class="w3-white">
-            <td>2020-2023</td>
-            <td>AWS Cloud Practioner</td>
-            <td>AWS</td>
-          </tr>
           <tr>
-            <td>2015-Present</td>
-            <td>CTECS National Readiness Skills</td>
-            <td>OPHS</td>
-          </tr>
-          <tr class="w3-white">
-            <td>2015-2017</td>
-            <td>UC Davis Veterinary Program at the University of California</td>
-            <td>PetValu</td>
+            <td>2022</td>
+            <td>Agile Scrum Fundamentals</td>
+            <td>Udemy</td>
           </tr>
         </table>
       </div>
@@ -114,25 +107,23 @@ All key files will be located via Github and Azure's storage service, making is 
 </div>
 
 <!-- Third Grid: Swing By & Contact -->
-<div class="w3-row" id="contact">
-  <div class="w3-half w3-container w3-dark-grey w3-center w3-padding-48" style="height:700px;">
-      <h1>Education</h1>
+<div class="w3-row">
+  <div class="w3-half w3-container w3-dark-grey w3-center w3-padding-48" style="height:700px;" id="education">
+      <h1 style="font-variant: small-caps;">Education</h1>
       <div><hr></div>
       <div class="w3-padding-48">
-      <h2>Northern Virginia Community College</h2>
-      <h3>A.S. Computer Science</h3>
-      <p>Developed key skills while working individually and grouped solving projects in a classroom setting.</p>
+      <h3>Computer Science, Northern Virginia Community College</h3>
   </div>
 </div>
 
-  <div class="w3-half w3-teal w3-container" style="height:700px" >
+  <div class="w3-half w3-teal w3-container" style="height:700px" id="contact">
     <div class="w3-padding-48">
-      <center><h1>Contact Me</h1>
+      <center><h1 style="font-variant: small-caps;">Contact Me</h1>
         <hr>
         <div class="w3-padding-48">
         <h3>Wolfe.James.J96@gmail.com</h3>
-        <h3>https://github.com/profWolfe</h3>
-        <h3>https://www.linkedin.com/in/james-wolfe-6420151aa/</h3>
+        <a href="https://github.com/profWolfe/WolfeJamesWebsitePortfolio" target="_blank"><h3>GitHub Repository</h3></a>
+        <a href="https://www.linkedin.com/in/james-wolfe-6420151aa/" target="_blank"><h3>LinkedIn Profile</h3></a>
       </center>
     </div>
   </div>
@@ -141,7 +132,8 @@ All key files will be located via Github and Azure's storage service, making is 
 
 <!-- Footer -->
 <footer class="w3-container w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  James Wolfe, The best coder.
+  <p>Copyright © 2022 . All rights reserved</p>
 </footer>
 
 </body>
