@@ -80,7 +80,7 @@ button
 .2s ease-in-out;transition:left .2s ease-in-out}.intro--banner button:hover
 .btn-background{left:0}.intro--banner button:focus{outline:none}.intro--banner
 button svg{position:relative;left:5px;width:15px;fill:#fff}.intro--banner
-img{position:absolute;bottom:21px;right:-12px}.intro--options{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin:0;padding:0;list-style:none}.intro--options>a{max-width:250px;text-decoration:none;color:#282828;-webkit-transition:color
+img{position:absolute;bottom:21px;right:-250px}.intro--options{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin:0;padding:0;list-style:none}.intro--options>a{max-width:250px;text-decoration:none;color:#282828;-webkit-transition:color
 .2s ease-in-out;transition:color .2s
 ease-in-out}.intro--options>a:hover{color:#fff}.intro--options
 h3{font-size:16px;text-transform:uppercase}.intro--options
